@@ -1,4 +1,4 @@
-%include        /usr/lib/rpm/macros.perl
+%include	/usr/lib/rpm/macros.perl
 Summary:	Threaded I/O tester
 Name:		tiobench
 Version:	0.3.3
@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Portable, robust, fully-threaded I/O benchmark program.
 
 %prep
-%setup  -q
+%setup -q
 
 %build
 %{__make} \
