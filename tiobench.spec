@@ -1,3 +1,4 @@
+%include        /usr/lib/rpm/macros.perl
 Summary:	Threaded I/O tester
 Name:		tiobench
 Version:	0.3.3
@@ -7,6 +8,7 @@ Group:		Applications/System
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	bf485bf820e693c79e6bd2a38702a128
 URL:		http://www.lysator.liu.se/~pen/piozone/
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
