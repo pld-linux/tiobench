@@ -25,7 +25,7 @@ Przeno¶ny, potê¿ny, w pe³ni w±tkowy program testuj±cy wydajno¶æ I/O.
 %{__make} \
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}" \
-	LDFLAGS="%{rpmldflags}"
+	LINK="%{__cc} %{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
