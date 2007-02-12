@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Threaded I/O tester
-Summary(pl):	Wielow±tkowy tester I/O
+Summary(pl.UTF-8):   WielowÄ…tkowy tester I/O
 Name:		tiobench
 Version:	0.3.3
 Release:	1
@@ -15,8 +15,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Portable, robust, fully-threaded I/O benchmark program.
 
-%description -l pl
-Przeno¶ny, potê¿ny, w pe³ni w±tkowy program testuj±cy wydajno¶æ I/O.
+%description -l pl.UTF-8
+PrzenoÅ›ny, potÄ™Å¼ny, w peÅ‚ni wÄ…tkowy program testujÄ…cy wydajnoÅ›Ä‡ I/O.
 
 %prep
 %setup -q
