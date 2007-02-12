@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Threaded I/O tester
-Summary(pl.UTF-8):   Wielowątkowy tester I/O
+Summary(pl.UTF-8):	Wielowątkowy tester I/O
 Name:		tiobench
 Version:	0.3.3
 Release:	1
