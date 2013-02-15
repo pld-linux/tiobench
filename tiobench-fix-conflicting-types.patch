@@ -1,0 +1,20 @@
+--- tiobench-0.3.3/tiotest.c.aligned	2013-02-15 01:01:30.377497578 +0100
++++ tiobench-0.3.3/tiotest.c	2013-02-15 01:02:11.170996694 +0100
+@@ -31,7 +31,7 @@ static const char* versionStr = "tiotest
+ */
+ ArgumentOptions args;
+ 
+-static void * aligned_alloc(ssize_t size)
++static void * tio_aligned_alloc(ssize_t size)
+ {
+ 	caddr_t a;
+ 	a = mmap((caddr_t )0, size, 
+@@ -281,7 +281,7 @@ void initialize_test( ThreadTest *d )
+ 		pthread_attr_setscope(&(d->threads[i].thread_attr),
+ 				      PTHREAD_SCOPE_SYSTEM);
+ 
+-		d->threads[i].buffer = aligned_alloc( d->threads[i].blockSize );
++		d->threads[i].buffer = tio_aligned_alloc( d->threads[i].blockSize );
+ 		if( d->threads[i].buffer == NULL )
+ 		{
+ 			perror("Error allocating memory");
