@@ -1,0 +1,29 @@
+--- tiobench-0.3.3/tiotest.c.formatsec	2013-02-15 00:55:05.732229659 +0100
++++ tiobench-0.3.3/tiotest.c	2013-02-15 00:56:02.128590800 +0100
+@@ -91,7 +91,7 @@ inline void checkIntZero(int value, char
+ {
+ 	if (value <= 0) 
+ 	{
+-		printf(mess);
++		fputs(mess, stdout);
+ 		printf("Try 'tiotest -h' for more information.\n");
+ 		exit(1);
+ 	}
+@@ -101,7 +101,7 @@ inline void checkLong(long value, char *
+ {
+ 	if (value < 0) 
+ 	{
+-		printf(mess);
++		fputs(mess, stdout);
+ 		printf("Try 'tiotest -h' for more information\n");
+ 		exit(1);
+ 	}
+@@ -552,7 +552,7 @@ void do_test( ThreadTest *test, int test
+ 		if(args.debugLevel > 4)
+ 		{
+ 			printf("Created %d threads\n", i);
+-			fprintf(stderr, debugMessage);
++			fputs(debugMessage, stderr);
+ 			fflush(stderr);
+ 		}
+ 	
